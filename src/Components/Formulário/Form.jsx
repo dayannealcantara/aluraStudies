@@ -1,10 +1,11 @@
 import React from 'react';
 import Button from '../Button/Button';
+import './FormStyle.scss';
 
 function Form() {
   return (
-    <aside>
-      <div>
+    <form className="novaTarefa">
+      <div className="inputContainer">
         <label htmlFor="tarefa">Adicione um novo estudo</label>
         <input
           type="text"
@@ -14,7 +15,7 @@ function Form() {
           required
         />
       </div>
-      <div>
+      <div className="inputContainer">
         <label htmlFor="tempo">Tempo</label>
         <input
           type="time"
@@ -28,7 +29,7 @@ function Form() {
       </div>
 
       <Button />
-    </aside>
+    </form>
   );
 }
 export default Form;
